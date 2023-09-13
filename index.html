@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Numberblock Finder</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        text-align: center;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      p {
+        color: #555;
+        font-size: 14px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+
+  </head>
+  <body>
+    <form>
+      <h1>Numberblocks Finder</h1>
+      <input type="number" id="number"></input>
+      <p>Enter a number...</p>
+      <img id="image" src="QuestionMark.png">
+    </form>
+    <p style="text-align: center; font-style: italic; margin-top: 10px;">
+        All images belong to their respective owners. I do not own any of the images.
+    </p>
+    <script>
+const number = document.getElementById("number");
+const image = document.getElementById("image");
+
+number.addEventListener('input', function() {
+  var value = number.value;
+  if (value == 0) {
+    image.src = "Zero.jfif";
+  } else if (value == 1) {
+    image.src = "One.jfif";
+  } else if (value == 2) {
+    image.src = "Two.jfif";
+  } else if (value == 3) {
+    image.src = "Three.jfif";
+  } else if (value == 4) {
+    image.src = "Four.jfif";
+  } else if (value == 5) {
+    image.src = "Five.jfif";
+  } else if (value == 6) {
+    image.src = "Six.jfif";
+  } else if (value == 7) {
+    image.src = "Seven.jfif";
+  } else if (value == 8) {
+    image.src = "Eight.jfif";
+  } else if (value == 9) {
+    image.src = "Nine.jfif";
+  } else if (value == 10) {
+    image.src = "Ten.png";
+  } else if (value == 11) {
+    image.src = "Eleven.png";
+  } else if (value == 12) {
+    image.src = "Twelve.png";
+  } else if (value == 13) {
+    image.src = "Thirtheen.png";
+  } else if (value == 14) {
+    image.src = "Fourteen.jfif";
+  } else if (value == 15) {
+    image.src = "Fifteen.png";
+  } else if (value == 16) {
+    image.src = "Sixteen.jfif";
+  } else if (value == 17) {
+    image.src = "Seventeen.png";
+  } else if (value == 18) {
+    image.src = "Eighteen.png";
+  } else if (value == 19) {
+    image.src = "Nineteen.png";
+  } else if (value == 20) {
+    image.src = "Twenty.jfif";
+  } else if (value == 21) {
+    image.src = "TwentyOne.jfif";
+  } else if (value == 22) {
+    image.src = "TwentyTwo.jfif";
+  } else if (value == 23) {
+    image.src = "TwentyThree.jfif";
+  } else if (value == 24) {
+    image.src = "TwentyFour.jfif";
+  } else if (value == 25) {
+    image.src = "TwentyFive.jfif";
+  } else if (value == 26) {
+    image.src = "TwentySix.jfif";
+  } else if (value == 27) {
+    image.src = "TwentySeven.jfif";
+  } else if (value == 28) {
+    image.src = "TwentyEight.jfif";
+  } else if (value == 29) {
+    image.src = "TwentyNine.jfif";
+  } else if (value == 30) {
+    image.src = "Thirty.jfif";
+  } else if (value == 31) {
+    image.src = "ThirtyOne.jfif";
+  } else if (value == 32) {
+    image.src = "ThirtyTwo.jfif";
+  } else if (value == 33) {
+    image.src = "ThirtyThree.jfif";
+  } else if (value == 34) {
+    image.src = "ThirtyFour.jfif";
+} else if (value == 35) {
+    image.src = "ThirtyFive.jfif";
+  } else if (value == 36) {
+    image.src = "ThirtySix.jfif";
+  } else if (value == 37) {
+    image.src = "ThirtySeven.jfif";
+  } else if (value == 38) {
+    image.src = "ThirtyEight.jfif";
+  } else if (value == 39) {
+    image.src = "ThirtyNine.jfif";
+  } else if (value == 40) {
+    image.src = "Forty.jfif";
+  } else if (value == 41) {
+    image.src = "FortyOne.png";
+  } else if (value == 42) {
+    image.src = "FortyTwo.jfif";
+  } else if (value == 43) {
+    image.src = "FortyThree.jfif";
+  } else if (value == 44) {
+    image.src = "FortyFour.jfif";
+  } else if (value == 45) {
+    image.src = "FortyFive.jfif";
+  } else if (value == 46) {
+    image.src = "FortySix.jfif";
+  } else if (value == 47) {
+    image.src = "FortySeven.png";
+  } else if (value == 48) {
+    image.src = "FortyEight.png";
+  } else if (value == 49) {
+    image.src = "FortyNine.jfif";
+  } else if (value == 50) {
+    image.src = "Fifty.jfif";
+  } else if (value == 51) {
+    image.src = "FiftyOne.png";
+  } else if (value == 52) {
+    image.src = "FiftyTwo.jfif";
+  } else if (value == 53) {
+    image.src = "FiftyThree.png";
+  } else if (value == 54) {
+    image.src = "FiftyFour.png";
+  } else if (value == 55) {
+    image.src = "FiftyFive.jfif";
+  } else if (value == 56) {
+    image.src = "FiftySix.png";
+  } else if (value == 57) {
+    image.src = "FiftySeven.png";
+  } else if (value == 58) {
+    image.src = "FiftyEight.png";
+  } else if (value == 59) {
+    image.src = "FiftyNine.png";
+  } else if (value == 60) {
+    image.src = "Sixty.jfif";
+  } else if (value == 61) {
+    image.src = "SixtyOne.png";
+  } else if (value == 62) {
+    image.src = "SixtyTwo.jfif";
+  } else if (value == 63) {
+    image.src = "SixtyThree.jfif";
+  } else if (value == 64) {
+    image.src = "SixtyFour.jfif";
+  } else if (value == 65) {
+    image.src = "SixtyFive.jfif";
+  } else if (value == 66) {
+    image.src = "SixtySix.png";
+  } else if (value == 67) {
+    image.src = "SixtySeven.png";
+  } else if (value == 68) {
+    image.src = "SixtyEight.png";
+  } else if (value == 69) {
+    image.src = "SixtyNine.png";
+  } else if (value == 70) {
+    image.src = "Seventy.jfif";
+  } else if (value == 71) {
+    image.src = "SeventyOne.jfif";
+  } else if (value == 72) {
+    image.src = "SeventyTwo.jfif";
+  } else if (value == 73) {
+    image.src = "SeventyThree.jfif";
+  } else if (value == 74) {
+    image.src = "SeventyFour.jfif";
+  } else if (value == 75) {
+    image.src = "SeventyFive.jfif";
+  } else if (value == 76) {
+    image.src = "SeventySix.png";
+  } else if (value == 77) {
+    image.src = "SeventySeven.jfif";
+  } else if (value == 78) {
+    image.src = "SeventyEight.jfif";
+  } else if (value == 79) {
+    image.src = "SeventyNine.jfif";
+  } else if (value == 80) {
+    image.src = "Eighty.jfif";
+  } else if (value == 81) {
+    image.src = "EightyOne.jfif";
+  } else if (value == 82) {
+    image.src = "EightyTwo.png";
+  } else if (value == 83) {
+    image.src = "EightyThree.jfif";
+  } else if (value == 84) {
+    image.src = "EightyFour.png";
+  } else if (value == 85) {
+    image.src = "EightyFive.jfif";
+  } else if (value == 86) {
+    image.src = "EightySix.jfif";
+  } else if (value == 87) {
+    image.src = "EightySeven.jfif";
+  } else if (value == 88) {
+    image.src = "EightyEight.png";
+  } else if (value == 89) {
+    image.src = "EightyNine.jfif";
+  } else if (value == 90) {
+    image.src = "Ninety.jfif";
+  } else if (value == 91) {
+    image.src = "NinetyOne.jfif";
+  } else if (value == 92) {
+    image.src = "NinetyTwo.jfif";
+  } else if (value == 93) {
+    image.src = "NinetyThree.jfif";
+  } else if (value == 94) {
+    image.src = "NinetyFour.jfif";
+  } else if (value == 95) {
+    image.src = "NinetyFive.jfif";
+  } else if (value == 96) {
+    image.src = "NinetySix.jfif";
+  } else if (value == 97) {
+    image.src = "NinetySeven.jfif";
+  } else if (value == 98) {
+    image.src = "NinetyEight.png";
+  } else if (value == 99) {
+    image.src = "NinetyNine.jfif";
+  } else if (value == 100) {
+    image.src = "OneHundred.jfif";
+  } else {
+    image.src = "QuestionMark.png";
+  }
+});
+    </script>
+  </body>
+</html>
