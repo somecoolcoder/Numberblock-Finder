@@ -45,7 +45,7 @@
   <body>
     <form>
       <h1>Numberblocks Finder</h1>
-      <input type="number" id="number" min="0" max="100">
+      <input type="number" id="number" min="0" max="100" oninput="checkNumberRange(this)">
       <p>Enter a number 1 to 100...</p>
       <img id="image" src="QuestionMark.png">
     </form>
@@ -264,6 +264,13 @@ number.addEventListener('input', function() {
     image.src = "QuestionMark.png";
   }
 });
+function checkNumberRange(input) {
+    if (input.value < input.min) {
+        input.value = input.min;
+    } else if (input.value > input.max) {
+        input.value = input.max;
+    }
+}
     </script>
   </body>
 </html>
